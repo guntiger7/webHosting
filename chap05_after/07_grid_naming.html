@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            padding-top: 10px;
+
+            display: grid;
+            grid-template: 70px 1fr 70px / 200px 1fr;
+            grid-gap: 5px;
+
+            grid-template-areas: 
+            'header header'
+            'aside content'
+            'footer footer';
+        }
+
+        [class*=cell] {
+            box-sizing: border-box;
+            border: 5px solid;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .cell-header {
+            grid-area: header;
+        }
+        .cell-aside {
+            grid-area: aside;
+        }
+        .cell-content {
+            grid-area: content;
+        }
+        .cell-footer {
+            grid-area: footer;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cell-header"></div>
+        <div class="cell-aside"></div>
+        <div class="cell-content"><h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus obcaecati ut quo sequi, hic corrupti cumque illo, vitae, facilis laborum illum id consequuntur fugit itaque voluptate? Unde qui ut harum neque illo? Quam sit qui iusto exercitationem corrupti nesciunt voluptatum vitae beatae! Vero ex dolorem, neque animi, repellat nemo recusandae doloremque, delectus necessitatibus veniam doloribus eligendi quas possimus incidunt quisquam minus esse eum quaerat in quam? Necessitatibus non magnam ea laborum distinctio ullam. Dicta laboriosam provident quia rerum nulla tempore, reiciendis qui magnam nobis impedit cum hic minus sed doloribus quasi, unde natus accusantium omnis porro accusamus? Quam, ipsam nostrum!</h1></div>
+        <div class="cell-footer"></div>
+    </div>
+
+</body>
+
+</html>
