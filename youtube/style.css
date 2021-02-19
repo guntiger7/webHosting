@@ -80,6 +80,8 @@ header .icons .fa-search {
 /* Video info */
 .infoAndUpNext .info {
   padding: var(--spacing);
+  flex: 2; /* flex: 1 1 0 */
+  /* overflow: auto; */
 }
 
 /* Metadata */
@@ -191,6 +193,8 @@ header .icons .fa-search {
 /* Up next */
 .upNext {
   padding: 0 var(--spacing);
+  flex: 3; /* flex: 1 1 0 */
+  /* overflow: auto; */
 }
 
 .upNext > .title {
@@ -208,11 +212,16 @@ header .icons .fa-search {
   flex-basis: 35%;
   margin-right: var(--spacing);
 }
-
+.upNext .item .img {
+  flex-basis: 35%;
+  margin-right: var(--spacing);
+}
 .upNext .item .img img {
   width: 100%;
 }
-
+.upNext .item .img video {
+  width: 100%;
+}
 .upNext .item .itemInfo {
   flex-basis: 60%;
   display: flex;

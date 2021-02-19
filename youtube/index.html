@@ -1,140 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Youtube Mobile</title>
-    <script
-      src="https://kit.fontawesome.com/2d323a629b.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js" defer></script>
-  </head>
+<html lang="ko">
 
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="logo">
-        <i class="fab fa-youtube"></i>
-        <span class="title">Youtube</span>
-      </div>
-      <div class="icons">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-ellipsis-v"></i>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Youtube gunho</title>
+  <link rel="shortcut icon" href="image/favicon.png">
+  <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
+</head>
 
-    <!-- Video Player -->
-    <section class="player">
-      <video controls src="video/video.mp4"></video>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <i class="fab fa-youtube"></i>
+      <span class="title">GUNHO Youtube</span>
+    </div>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-ellipsis-v"></i>
+    </div>
+  </header>
+
+  <!-- Video Player -->
+  <section class="player">
+    <video autoplay muted loop controls src="video/bread.mp4"></video>
+  </section>
+
+  <!-- Video info & Up next -->
+  <div class="infoAndUpNext">
+    <!-- Video Info -->
+    <section class="info">
+      <!-- Metadata -->
+      <div class="metadata">
+        <ul class="hashtags">
+          <li>#대구</li>
+          <li>#HTML</li>
+          <li>#CSS</li>
+        </ul>
+        <div class="titleAndButton">
+          <span class="title clamp">유튜브 모바일 웹사이트 따라 만들기
+          </span>
+          <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
+        <span class="views">1M views 1 month ago</span>
+      </div>
+      <!-- Actions buttons -->
+      <ul class="actions">
+        <li>
+          <button>
+            <i class="active fas fa-thumbs-up"></i><span>1K</span>
+          </button>
+        </li>
+        <li>
+          <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+        </li>
+        <li>
+          <button><i class="fas fa-share"></i><span>Share</span></button>
+        </li>
+        <li>
+          <button><i class="fas fa-plus"></i><span>Save</span></button>
+        </li>
+        <li>
+          <button>
+            <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+          </button>
+        </li>
+      </ul>
+      <!-- Channel description -->
+      <div class="channel">
+        <div class="metadata">
+          <img src="image/avatar.jpg" alt="" />
+          <div class="info">
+            <span class="name">건호 TV</span>
+            <span class="subscribers">1M subcribers</span>
+          </div>
+        </div>
+        <button class="subscribe">subscribe</button>
+      </div>
     </section>
 
-    <!-- Video info & Up next -->
-    <div class="infoAndUpNext">
-      <!-- Video Info -->
-      <section class="info">
-        <!-- Metadata -->
-        <div class="metadata">
-          <ul class="hashtags">
-            <li>#DreamCoding</li>
-            <li>#DreamCoders</li>
-            <li>#Ellie</li>
-          </ul>
-          <div class="titleAndButton">
-            <span class="title clamp"
-              >Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
-              만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
-              드림코딩과 함께하는 프론트엔드 실전 입문편
-            </span>
-            <button class="moreBtn">
-              <i class="fas fa-caret-down"></i>
-            </button>
+    <!-- Up next -->
+    <section class="upNext">
+      <span class="title">Up next</span>
+      <ul>
+        <li class="item">
+          <div class="img"> <video loop onmouseover="this.play()" onmouseout="this.pause();" src="video/salad.mp4"></video>
           </div>
-          <span class="views">1M views 1 month ago</span>
-        </div>
-        <!-- Actions buttons -->
-        <ul class="actions">
-          <li>
-            <button>
-              <i class="active fas fa-thumbs-up"></i><span>1K</span>
-            </button>
-          </li>
-          <li>
-            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
-          </li>
-          <li>
-            <button><i class="fas fa-share"></i><span>Share</span></button>
-          </li>
-          <li>
-            <button><i class="fas fa-plus"></i><span>Save</span></button>
-          </li>
-          <li>
-            <button>
-              <i class="fab fa-font-awesome-flag"></i><span>Report</span>
-            </button>
-          </li>
-        </ul>
-        <!-- Channel description -->
-        <div class="channel">
-          <div class="metadata">
-            <img src="image/avatar.jpg" alt="" />
-            <div class="info">
-              <span class="name">건호 TV</span>
-              <span class="subscribers">1M subcribers</span>
-            </div>
+          <div class="itemInfo">
+            <span class="title">3가지 다이어트 샐러드 만들기, 3 HEALTHY SALAD RECIPES</span>
+            <span class="name">건호 선생</span>
+            <span class="views">82K views</span>
           </div>
-          <button class="subscribe">subscribe</button>
-        </div>
-      </section>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <div class="img"><video loop onmouseover="this.play()" onmouseout="this.pause();" src="video/video.mp4">
+            <!-- <source src="https://media.w3.org/2010/05/sintel/trailer.mp4"> -->
+          </video></div>
+          <div class="itemInfo">
+            <span class="title"> 2021 뜨는 패션 & 지는 패션 / 새롭게 유행할 패션 트렌드 흐름은?</span>
+            <span class="name">건호 선생</span>
+            <span class="views">82K views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <div class="img"><img src="image/3.png" alt="" /></div>
+          <div class="itemInfo">
+            <span class="title">[스프링 가이드] "토비의 스프링 그렇게 보지 마세요." - YouTube</span>
+            <span class="name">건호 선생</span>
+            <span class="views">82K views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
 
-      <!-- Up next -->
-      <section class="upNext">
-        <span class="title">Up next</span>
-        <ul>
-          <li class="item">
-            <div class="img"><img src="image/1.jpg" alt="" /></div>
-            <div class="itemInfo">
-              <span class="title"
-                >프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발
-                입문자편 강의를 시작합니다 ⭐️ (HTML, CSS, Javascript + 실전
-                프로젝트)</span
-              >
-              <span class="name">드림코딩 by 엘리</span>
-              <span class="views">82K views</span>
-            </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-          </li>
-          <li class="item">
-            <div class="img"><img src="image/2.png" alt="" /></div>
-            <div class="itemInfo">
-              <span class="title"
-                >HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요 |
-                프론트엔드 개발자 입문편: HTML, CSS, Javascript</span
-              >
-              <span class="name">드림코딩 by 엘리</span>
-              <span class="views">82K views</span>
-            </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-          </li>
-          <li class="item">
-            <div class="img"><img src="image/3.png" alt="" /></div>
-            <div class="itemInfo">
-              <span class="title"
-                >HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 |
-                프론트엔드 개발자 입문편: HTML, CSS, Javascript</span
-              >
-              <span class="name">드림코딩 by 엘리</span>
-              <span class="views">82K views</span>
-            </div>
-            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </body>
 </html>
